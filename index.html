@@ -1,33 +1,444 @@
 <!doctype html>
 <html class="no-js" lang="es">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content>
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+    <meta property="og:title" content>
+    <meta property="og:type" content>
+    <meta property="og:url" content>
+    <meta property="og:image" content>
+    <meta property="og:image:alt" content>
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
 
-<body>
+  </head>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+  <body>
+    <!-- menu -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Jlemus</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#curriculum"
+                onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
 
-</body>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/hero.png" alt>
+        </div>
+        <h1>JAIR LEMUS</h1>
+        <h2>Ingeniero Mecánico</h2>
+        <div class="redes">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p><span>Hola, soy Jair Lemus.</span> Ingeniero Mecánico de la
+          universidad Santo Tomas, especialista en direccion y gestion de la
+          calidad ISO:9001 ICONTEC, Con conocimientos de programacion, encatado
+          de conocer como funciona el mundo,
+          apacionado por las cosas nuevas. Gran inventor de proyectos</p>
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                13-11-1996
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                3203245121
+              </li>
+              <li>
+                <strong>Email</strong>
+                lemusortiznew@gmail.com
+              </li>
+              <li>
+                <strong>Website</strong>
+                www.jlemus.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Colombia Bogota
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>Ingeniero</span>
+              </li>
+            </ul>
+          </div>
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-motorcycle"></i>
+                <span> MOTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTOS</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <button>
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>10%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>inventor</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Python</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>20%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Arduino</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>99%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>1001%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Proyect Management</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Ingenieria Mecánica</h4>
+              <span class="casa">Universidad Santo Tomas</span>
+              <span class="fecha">2018-2 - 2024-1</span>
+              <p>El Ingeniero Mecánico de la Universidad Santo Tomás puede desempeñarse en diversos cargos, tales como: Especialista en diseño mecánico,
+                 Jefe de planta, Supervisor de planta, Gerente de producción, Ingeniero de proyectos, Gerente de mantenimiento e ingeniero de ventas y soporte técnico, 
+                 Asesor o Consultor, Investigador y Docente.</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Especializacion en direccion y gestion de la calidad</h4>
+              <span class="casa">USTA ICONTEC</span>
+              <span class="fecha">2023-2024</span>
+              <p>
+                Generar un sistema de gestion de la calidad en base a procesos que se requieran para mejorar la produccion de la empresa <br>
+                Certificado de Formación de Auditor Interno de Sistemas de Gestión de la Calidad, NTC ISO 9001:2015 y NTC ISO 19011:2018.<br>
+
+                Certificado Curso de Gestión por Procesos y Documentación, NTC- ISO 9001:2015.</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Desarrollo de Poyectos </h4>
+              <span class="casa">Fundacion cepav</span>
+              <span class="fecha">2024-1</span>
+              <p>conociemntos en proyectos de HTML, CCS, JAVA , React , AWS . </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Ingeneiero de Taller asistente</h4>
+              <span class="casa">Multidimensionales </span>
+              <span class="fecha">2023-2024</span>
+              <p>Ingeniero de taller en desarrollo de productos en areas de termoformado. Seguiemiento de proyectos y
+                 mejoramiento de la recoleccion de informacion en el lugar por medio de un programa desarrollado en Python</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Ingeniero de desarrollo</h4>
+              <span class="casa">TRIMCO</span>
+              <span class="fecha">2024ene-2024jun</span>
+              <p>Ingeniero de desarrollo de producto junior en el sector automotriz</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Front Developer</h4>
+              <span class="casa"></span>
+              <span class="fecha">2024</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
+                cumque repellat, tempora recusandae aliquam nemo esse natus
+                impedit, nostrum temporibus veritatis eaque soluta aperiam id
+                repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTAFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/p1.png" alt>
+            <div class="overlay">
+              <h3>Figuras</h3>
+              <p>inventor</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p2.png" alt>
+            <div class="overlay">
+              <h3>Diseños</h3>
+              <p>Impresion 3D</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p3.png" alt>
+            <div class="overlay">
+              <h3>Proyectos</h3>
+              <p>Prototipo</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p4.png" alt>
+            <div class="overlay">
+              <h3>Python</h3>
+              <p>programacion</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p5.jpg" alt>
+            <div class="overlay">
+              <h3>Impresion 3D</h3>
+              <p>Impresion y pintura</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p6.jpg" alt>
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <input type="text" placeholder="Tú Nombre">
+            <input type="text" placeholder="Número telefónico">
+            <input type="text" placeholder="Dirección de correo">
+            <input type="text" placeholder="Tema">
+            <textarea name id cols="30" rows="10"
+              placeholder="Mensaje"></textarea>
+            <button>
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="img/ubicacion.png" alt>
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Colombia Bogota
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Contacto: 3203245121
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: lemusortiznew@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-skype"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
 
 </html>
